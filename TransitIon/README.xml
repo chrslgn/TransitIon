@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+<title>Readme.xml</title>
+<description>This is the instruction set and changelog for TransitIon app.</description>
+last updated:<date><day>30</day><month>01</month><year>2013</year></date>
+version: <major>0</major><minor>0</minor><status>0</status><build>4</build>
+
+<body>
+	<versioning>
+	Versioning will follow the model of 'major.minor.status.build'.
+		<major>major designates a major change in in the released version of code or UI that is stable and usable. Will never be reset.</major>
+		<minor>minor designates a minor change within the code that is stable and usable but not significantly different from the previous minor value. Reset at the increment of the major value.</minor>
+		<status>status designates the status of the current build. Reset at the increment of the minor value. The only status values used are: <br />
+			<ul>
+			<li>0 - alpha, no clients should see the code, internal dev use only</li>
+			<li>1 - beta, only specifically designated clients have access to the code</li>
+			<li>2 - release candidate, the code is in a stable enough state to be released to clients who require specific fixes before the official release (beta's beta)</li>
+			</ul>
+		</status>
+		<build>build designates the current change set of code that has been committed to source. Will never reset in order to provide a single physical value to differentiate app versions.</build>
+	</versioning>
+</body>
+<changelog> 
+<major>0
+	<minor>0
+		<status>0
+			<build>4
+				<date><day>3</day><month>02</month><year>2013</year></date>
+				<commit>				
+				    <note>Need to create svn repository to store build commits so that build numbers become realistic and traceable.</note>
+				    <note>Look into a bug tracker for identifying and tracking code problems, potentially look for one with milestones to better focus on what needs to be accomplished for each major, minor, and status value.</note>
+			    	<change>Created JavaDoc filter requirements for all classes, methods, and class variables.</change>
+			    	<change>Applied JavaDoc to all classes, methods, and class variables (really glad I did this now).</change>
+			    	<change>Created ReadMe, using XML for documenting changes as well, decided on versioning scheme.</change>
+			    		<note>Need to create CSS/DTD for viewing the README.xml file in a browser.</note>
+				</commit>
+			</build>
+			<build>3
+				<date><day>1</day><month>02</month><year>2013</year></date>
+				<commit>				
+			    	<change>Provided better structure for the package paths.</change>
+			    	<change>Cleaned up logging to file, also introduced XML based logging using XmlSerialize.</change>
+				</commit>
+			</build>
+			<build>2
+				<date><day>31</day><month>01</month><year>2013</year></date>
+				<commit>
+					<note>Also look into dynamically loading UI components.</note>
+			    	<change>Changed the logger to be more extensible, need to create a FileIO package with the only purpose being read/write to files.</change>
+			    		<note>Need to create an abstract FileIO class with read/write abilities that all future FileIO classes will inherit</note>
+			    	<change>Static strings were introduced for storing folder paths and time formats.</change>
+				</commit>
+			</build>
+			<build>1
+				<date><day>30</day><month>01</month><year>2013</year></date>
+				<commit>
+			    	<change>Setup initial logger, print to screen (logcat) works, using default Android logging calls (i.e. Log.w(), Log.e()).
+			    		<note>Look into XML based logging, will allow for CSS/DTD styling to make finding problems easier, also viewable from a browser so possibly easier for drivers/managers to identify/notify of specific errors.</note>
+			    	</change>
+					<change>Created LoggableActivity, and decided on making all files inherit from a log class.</change>
+					<change>Created project.</change>
+				</commit>
+			</build>
+		</status>
+	</minor>
+</major>
+</changelog>
+</root> 
