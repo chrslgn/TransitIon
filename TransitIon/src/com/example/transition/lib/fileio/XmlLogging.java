@@ -18,7 +18,8 @@ import com.example.transition.lib.resources.StaticStrings;
 import com.example.transition.settings.AppConfig;
 
 /**
- * This class is used for logging. It creates a log, then writes to it in an XML format, dependent on the debug level allowed by {@link AppConfig#allowLogging(LogLevel)}. 
+ * This class is used for logging. It creates a log, then writes to it in an XML format, dependent on the debug level allowed by {@link AppConfig#allowLogging(LogLevel)}.
+ * @since 06/02/2013 
  * @author Chris Logan
  *
  */

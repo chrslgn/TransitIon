@@ -1,7 +1,10 @@
 package com.example.transition.lib.resources;
 
+import android.os.Environment;
+
 /**
  * This class stores all of the statically referenced strings which are resource independent such as: file paths, file headers, date/time layout format strings.
+ * @since 06/02/2013
  * @author Chris Logan
  *
  */
@@ -11,15 +14,15 @@ public class StaticStrings {
 	/**
 	 * The root location of where all files will be written/read.
 	 */
-	public static final String ROOT = "\\mnt\\sdcard\\TransitIon";
+	public static final String ROOT = Environment.getExternalStorageDirectory() + "/TransitIon";
 	/**
 	 * The location of where all the log files will be written/read.
 	 */
-	public static final String LOG_FILE_PATH = ROOT + "\\logs";
+	public static final String LOG_FILE_PATH = ROOT + "/logs";
 	/**
 	 * The location of where all the layout files will be written/read.
 	 */
-	public static final String LAYOUT_FILE_PATH = ROOT + "\\layouts";
+	public static final String LAYOUT_FILE_PATH = ROOT + "/layouts";
 	
 	//format strings
 	/**

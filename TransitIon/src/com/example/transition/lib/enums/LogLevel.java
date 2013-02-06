@@ -15,6 +15,7 @@ import android.util.Log;
  * <li>{@link LogLevel#ERROR} = ERR</li>
  * </ol> 
  * 
+ * @since 06/02/2013
  * @author Chris Logan
  *
  */

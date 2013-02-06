@@ -4,6 +4,7 @@ import com.example.transition.lib.enums.LogLevel;
 
 /**
  * Interface used to conform all classes to have the same methods for logging.
+ * @since 06/02/2013
  * @author Chris Logan
  *
  */
