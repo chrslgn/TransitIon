@@ -15,6 +15,7 @@ public final class R {
     }
     public static final class id {
         public static final int FrameLayout1=0x7f060000;
+        public static final int button=0x7f060002;
         public static final int imageView1=0x7f060001;
     }
     public static final class layout {
