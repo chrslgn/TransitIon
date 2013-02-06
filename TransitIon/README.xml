@@ -2,8 +2,8 @@
 <root>
 <title>Readme.xml</title>
 <description>This is the instruction set and changelog for TransitIon app.</description>
-last updated:<date><day>30</day><month>01</month><year>2013</year></date>
-version: <major>0</major><minor>0</minor><status>0</status><build>4</build>
+last updated:<date><day>06</day><month>02</month><year>2013</year></date>
+version: <major>0</major><minor>0</minor><status>0</status><build>5</build>
 
 <body>
 	<versioning>
@@ -24,8 +24,22 @@ version: <major>0</major><minor>0</minor><status>0</status><build>4</build>
 <major>0
 	<minor>0
 		<status>0
+		    <build>5
+				<date><day>06</day><month>02</month><year>2013</year></date>
+				<commit>
+				    <note>Current game plan: fix the issue with acknowledge dialogs, ensure that logging works as desired, work on switching activities</note>				
+				    <note>Started to add the @since to class creation, need to make sure that any time a class is updated that I note what the update was and the date/reason</note>
+				    <note>Implemented tasks, milestones, and issue tracking through GIT to record ideas and better stay on track.</note>
+				    <note>Updated the calls to write to sd card, need to actually test writing/reading for logging purposes</note>
+				    <change>Added a resource bundle for buttons</change>
+				    <change>Added a locale, default to US</change>
+				    <change>Added a dialog for acknowledging messages</change>
+				    	<note>This will be expanded in the future to handle dialogs that require user acknoweldgement as well as displaying a message to users before a crash</note>
+				    	<note>This needs more work, currently the message and title both get lost when re-orienting the device</note>
+				</commit>
+			</build>
 			<build>4
-				<date><day>3</day><month>02</month><year>2013</year></date>
+				<date><day>03</day><month>02</month><year>2013</year></date>
 				<commit>				
 				    <note>Need to create svn repository to store build commits so that build numbers become realistic and traceable.</note>
 				    <note>Look into a bug tracker for identifying and tracking code problems, potentially look for one with milestones to better focus on what needs to be accomplished for each major, minor, and status value.</note>
@@ -36,7 +50,7 @@ version: <major>0</major><minor>0</minor><status>0</status><build>4</build>
 				</commit>
 			</build>
 			<build>3
-				<date><day>1</day><month>02</month><year>2013</year></date>
+				<date><day>01</day><month>02</month><year>2013</year></date>
 				<commit>				
 			    	<change>Provided better structure for the package paths.</change>
 			    	<change>Cleaned up logging to file, also introduced XML based logging using XmlSerialize.</change>
